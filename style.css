@@ -1,0 +1,44 @@
+.main{
+    text-align: center;
+    margin-top: 50px;
+}
+.button-choice{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(195, 221, 143);
+    cursor: pointer;
+
+}
+.image-choice{
+    height: 75px;
+}
+.button2{
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+.image2{
+    height: 35px;
+    width: 35px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #userMove, #computerMove, #result, #score {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  .button-choice:focus {
+    outline: none;
+  }
+  

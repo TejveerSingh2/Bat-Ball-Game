@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Bat Ball Game</h1>
+      <button
+        onclick="
+      let userChoice='bat'; 
+      let computerChoice=computerChoiceGenerator();
+      let res=generateAns(userChoice,computerChoice);
+      printAns(userChoice,computerChoice,res);"
+     class="button-choice" >
+        <img src="images/bat.png" alt="bat image" class="image-choice"></img>
+      </button>
+      <button
+        onclick=" userChoice='ball';
+      computerChoice=computerChoiceGenerator();
+      res=generateAns(userChoice,computerChoice);
+      printAns(userChoice,computerChoice,res);"
+      class="button-choice">
+        <img src="./images/ball.png" alt="ball image" class="image-choice">
+      </button>
+      <button
+        onclick=" userChoice='stump';
+      computerChoice=computerChoiceGenerator();
+      res=generateAns(userChoice,computerChoice);
+      printAns(userChoice,computerChoice,res);"
+       class="button-choice">
+        <img src="images/stump.png" alt="stump pic" class="image-choice">
+      </button>
+    
+      <h3 id="userMove"></h3>
+      <h3 id="computerMove"></h3>
+      <h3 id="result"></h3>
+      <h3 id="score"></h3>
+      <button
+      onclick="localStorage.clear() 
+      resetScore()
+      ;
+    "
+    class="button2"
+    >
+      <img src="images/restart.jpg" alt="restart" class="image2">
+    </button>
+    </div>
+    <script src="index.js">
+     
+    </script>
+  </body>
+</html>
